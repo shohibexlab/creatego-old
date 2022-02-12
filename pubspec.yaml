@@ -1,5 +1,5 @@
-name: yollet_navigation
-description: Yollet Navigation System Package
+name: yollet_system
+description: Yollet System Package
 version: 0.0.1
 
 environment:
