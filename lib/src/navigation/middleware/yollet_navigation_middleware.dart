@@ -31,23 +31,6 @@ class NavigationMiddlewareYollet extends MiddlewareClass<AppStateYollet> {
       if (parentPage == 'AppRoutes.RouteToHOME') {
         Get.appUpdate();
       }
-    } else if (action.to != null && action.to!.startsWith('#')) {
-      int? index = int.tryParse(action.to!.substring(1));
-
-      if (index != null && index < history.length) {
-        for (int i = 0; i < history.length - index - 1; i++) {
-          Get.back();
-        }
-      }
-    } else if (action.to != null && pages.contains(action.to)) {
-      Get.until(ModalRoute.withName(action.to!));
-      if (action.to == '') {
-        Get.appUpdate();
-      }
-
-      if (action.reload) {
-        Get.appUpdate();
-      }
     } else if (action.to != null) {
       _navigateTo(store, action);
     }
@@ -67,7 +50,7 @@ class NavigationMiddlewareYollet extends MiddlewareClass<AppStateYollet> {
   }
 
   void _pushOrReplaceNamed(
-      String? to, NavigateToAction action, Store<AppStateYollet> store) {
+      Widget? to, NavigateToAction action, Store<AppStateYollet> store) {
     if (action.pushAndRemoveUntil != null) {
       _pushAndRemoveUntil(action);
       return;
@@ -86,15 +69,16 @@ class NavigationMiddlewareYollet extends MiddlewareClass<AppStateYollet> {
   }
 
   _push(NavigateToAction action) async {
-    Get.toNamed(action.to!);
+    Get.to(action.to!);
   }
 
   _pushReplacement(NavigateToAction action) async {
-    Get.offNamed(action.to!);
+    Get.off(action.to!);
   }
 
   _pushAndRemoveUntil(NavigateToAction action) async {
-    Get.offNamedUntil(action.to!, (route) => false);
+    Get.offUntil(
+        MaterialPageRoute(builder: (context) => action.to!), (route) => false);
   }
 
   _removeUntil(NavigateToAction action) async {
