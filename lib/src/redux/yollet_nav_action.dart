@@ -2,7 +2,7 @@ import 'package:yollet_navigation/src/redux/yollet_nav_app_state.dart';
 
 ///----------------- Navigation Action Yollet -----------------
 
-void NavigateTo(
+void NAVIGATETO(
     {String? to,
     bool replace = false,
     Map<String, dynamic>? arguments,
