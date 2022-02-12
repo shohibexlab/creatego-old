@@ -1,3 +1,3 @@
 library yollet_localization;
 
-export './yollet_localization.dart';
+export 'src/yollet_localization.dart';
