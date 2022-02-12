@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:yollet_navigation/src/redux/yollet_nav_action.dart';
-import 'package:yollet_navigation/src/redux/yollet_nav_app_state.dart';
+import 'package:yollet_navigation/src/navigation/yollet_nav_action.dart';
+import 'package:yollet_navigation/src/navigation/yollet_nav_app_state.dart';
 
 class AppRouterObserverYollet extends RouteObserver<Route<dynamic>> {
   @override

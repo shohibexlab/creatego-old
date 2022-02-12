@@ -1,4 +1,4 @@
-import 'package:yollet_navigation/src/redux/yollet_nav_app_state.dart';
+import 'package:yollet_navigation/src/navigation/yollet_nav_app_state.dart';
 
 ///----------------- Navigation Action Yollet -----------------
 
