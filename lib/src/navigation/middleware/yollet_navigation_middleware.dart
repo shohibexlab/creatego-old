@@ -1,10 +1,4 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:redux/redux.dart';
-import 'package:yollet_navigation/src/navigation/states/yollet_nav_state.dart';
-import 'package:yollet_navigation/src/navigation/yollet_nav_action.dart';
-import 'package:yollet_navigation/src/navigation/yollet_nav_app_state.dart';
+import 'package:yollet_system/src/navigation/yollet_nav_action.dart';
 
 /* GetX Navigation Information => https://mukhtharcm.com/getx-navigation-basics/ */
 

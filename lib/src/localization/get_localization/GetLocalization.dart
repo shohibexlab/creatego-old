@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:get/get.dart';
-import 'package:yollet_navigation/src/localization/languages/languages.dart';
+import 'package:yollet_system/src/localization/languages/languages.dart';
 
 class GetLocalization extends Translations {
   String appName;

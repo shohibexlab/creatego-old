@@ -1,10 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_redux/flutter_redux.dart';
-import 'package:get/get.dart';
-import 'package:redux/redux.dart';
-import 'package:yollet_navigation/src/navigation/middleware/yollet_navigation_middleware.dart';
-import 'package:yollet_navigation/src/navigation/states/yollet_nav_state.dart';
-import 'package:yollet_navigation/src/navigation/yollet_nav_reducer.dart';
+import 'package:yollet_system/src/navigation/yollet_nav_action.dart';
 
 NavigationStateYollet get GETNAVIGATIONSTATEYOLLET =>
     StoreProvider.of<AppStateYollet>(Get.context!).state.navigationState;

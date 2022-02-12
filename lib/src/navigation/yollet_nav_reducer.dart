@@ -1,10 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:redux/redux.dart';
-import 'package:yollet_navigation/src/navigation/states/yollet_nav_state.dart';
-import 'package:yollet_navigation/src/navigation/yollet_nav_action.dart';
-import 'package:yollet_navigation/src/navigation/yollet_nav_app_state.dart';
 import 'dart:developer' as developer;
-import 'package:yollet_navigation/yollet_navigation.dart';
+
+import 'package:yollet_system/src/navigation/yollet_nav_action.dart';
 
 AppStateYollet appReducerYollet(AppStateYollet state, dynamic action) {
   var newState = state.copyWith(
