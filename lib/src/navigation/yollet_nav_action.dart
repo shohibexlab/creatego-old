@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:yollet_system/src/navigation/yollet_nav_app_state.dart';
 export 'package:yollet_system/src/navigation/yollet_nav_app_state.dart';
 export 'package:yollet_system/src/navigation/yollet_nav_observer.dart';
@@ -13,7 +12,7 @@ export 'package:flutter/material.dart';
 ///----------------- Navigation Action Yollet -----------------
 
 void NAVIGATETO(
-    {Widget? to,
+    {String? to,
     bool replace = false,
     Map<String, dynamic>? arguments,
     bool reload = false,
@@ -39,7 +38,7 @@ class UpdateNavigationYolletAction {
 }
 
 class NavigateToAction {
-  final Widget? to;
+  final String? to;
   final bool replace;
   final Map<String, dynamic>? arguments;
   String? removeUntilPage;
