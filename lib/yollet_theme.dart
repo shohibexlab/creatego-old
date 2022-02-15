@@ -2,6 +2,7 @@ library yollet_theme;
 
 //Packages
 export 'package:heroicons/heroicons.dart';
+export 'package:flutter/material.dart';
 
 //Theme
 export 'src/theme/theme_color.dart';
