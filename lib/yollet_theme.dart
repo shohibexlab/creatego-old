@@ -1,5 +1,8 @@
 library yollet_theme;
 
+//Packages
+export 'package:heroicons/heroicons.dart';
+
 //Theme
 export 'src/theme/theme_color.dart';
 export 'src/theme/theme_size_style.dart';
@@ -27,3 +30,4 @@ export 'src/components/inputs/search_field.dart';
 export 'src/components/inputs/table_builder.dart';
 export 'src/components/popups/popup_content.dart';
 export 'src/components/modals/default_modal.dart';
+export 'src/components/switch/switch.dart';
