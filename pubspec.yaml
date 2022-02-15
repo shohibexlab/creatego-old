@@ -12,6 +12,9 @@ dependencies:
   redux: ^5.0.0
   flutter_redux: ^0.8.2
   get: ^4.6.1
+  heroicons: ^0.3.0
+  dropdown_button2: ^1.0.6
+  hovering: ^1.0.4
 
 dev_dependencies:
   flutter_test:
