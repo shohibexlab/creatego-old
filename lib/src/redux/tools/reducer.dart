@@ -5,7 +5,7 @@ import '../states/basket_state.dart';
 import 'action.dart';
 import 'app_state.dart';
 
-AppState appReducer(AppState state, dynamic action) {
+AppStateSimple appReducerSimple(AppStateSimple state, dynamic action) {
   var newState = state.copyWith(
     basketState: _basketReducer(state.basketState, action),
   );

@@ -4,37 +4,37 @@ import 'package:get/get.dart';
 import 'package:redux/redux.dart';
 import 'package:yollet_system/src/redux/middlewares/basket_middleware.dart';
 import 'package:yollet_system/src/redux/tools/reducer.dart';
-
 import '../states/basket_state.dart';
 
-AppState get GETSTATE => StoreProvider.of<AppState>(Get.context!).state;
+AppStateSimple get GETSTATE =>
+    StoreProvider.of<AppStateSimple>(Get.context!).state;
 
-final appStore = Store<AppState>(
-  appReducer,
-  initialState: AppState.initial(),
+final appStoreSimple = Store<AppStateSimple>(
+  appReducerSimple,
+  initialState: AppStateSimple.initial(),
   middleware: [
     BasketMiddleware(),
   ],
 );
 
 @immutable
-class AppState {
+class AppStateSimple {
   final BasketState basketState;
 
-  AppState({
+  AppStateSimple({
     required this.basketState,
   });
 
-  factory AppState.initial() {
-    return AppState(
+  factory AppStateSimple.initial() {
+    return AppStateSimple(
       basketState: BasketState.initial(),
     );
   }
 
-  AppState copyWith({
+  AppStateSimple copyWith({
     BasketState? basketState,
   }) {
-    return AppState(
+    return AppStateSimple(
       basketState: basketState ?? this.basketState,
     );
   }

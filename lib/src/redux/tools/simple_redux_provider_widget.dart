@@ -7,6 +7,6 @@ class SimpleReduxProviderWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StoreProvider<AppState>(store: appStore, child: child);
+    return StoreProvider<AppStateSimple>(store: appStoreSimple, child: child);
   }
 }

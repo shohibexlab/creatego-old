@@ -5,9 +5,9 @@ import '../models/order/item_res.dart';
 import '../models/order/list_item_res.dart';
 import '../tools/action.dart';
 
-class BasketMiddleware extends MiddlewareClass<AppState> {
+class BasketMiddleware extends MiddlewareClass<AppStateSimple> {
   @override
-  call(Store<AppState> store, action, next) {
+  call(Store<AppStateSimple> store, action, next) {
     switch (action) {
       case GetAddToCartAction:
         return _getAddToCartAction(store.state, next);
@@ -36,7 +36,7 @@ class BasketMiddleware extends MiddlewareClass<AppState> {
 }
 
 //GetAddToCartAction
-_getAddToCartAction(AppState state, NextDispatcher next) async {
+_getAddToCartAction(AppStateSimple state, NextDispatcher next) async {
   OrderItemRes newItem1 = state.basketState.selectedItem;
   newItem1.qty = 1;
   newItem1.discount = 0;
@@ -46,7 +46,8 @@ _getAddToCartAction(AppState state, NextDispatcher next) async {
 }
 
 //GetIncrementItemQtyFromCartAction
-_getIncrementItemQtyFromCartAction(AppState state, NextDispatcher next) async {
+_getIncrementItemQtyFromCartAction(
+    AppStateSimple state, NextDispatcher next) async {
   OrderItemRes selectedItem1 = state.basketState.selectedItem;
   selectedItem1.discount = 0;
   selectedItem1.qty += 1;
@@ -54,7 +55,8 @@ _getIncrementItemQtyFromCartAction(AppState state, NextDispatcher next) async {
 }
 
 //GetDecrementItemQtyFromCartAction
-_getDecrementItemQtyFromCartAction(AppState state, NextDispatcher next) async {
+_getDecrementItemQtyFromCartAction(
+    AppStateSimple state, NextDispatcher next) async {
   OrderItemRes selectedItem1 = state.basketState.selectedItem;
   selectedItem1.discount = 0;
   if (selectedItem1.qty > 1) {
@@ -66,7 +68,7 @@ _getDecrementItemQtyFromCartAction(AppState state, NextDispatcher next) async {
 }
 
 //GetDeleteItemFromCartAction
-_getDeleteItemFromCartAction(AppState state, NextDispatcher next) async {
+_getDeleteItemFromCartAction(AppStateSimple state, NextDispatcher next) async {
   final cartItems1 = state.basketState.cartList;
   final selectedItem1 = cartItems1.firstWhere(
       (element) => element.itemId == state.basketState.selectedItem.itemId);
@@ -75,7 +77,7 @@ _getDeleteItemFromCartAction(AppState state, NextDispatcher next) async {
 }
 
 //GetClearCartAction
-_getClearCartAction(AppState state, NextDispatcher next) async {
+_getClearCartAction(AppStateSimple state, NextDispatcher next) async {
   next(UpdateBasketAction(
       cartList: [],
       selectedReservedItem: OrderListItemRes(
@@ -89,7 +91,7 @@ _getClearCartAction(AppState state, NextDispatcher next) async {
 }
 
 //GetReservedOrderListAction
-_getReservedOrderListAction(AppState state, NextDispatcher next) async {
+_getReservedOrderListAction(AppStateSimple state, NextDispatcher next) async {
   _onSuccess() {
     // next(UpdateBasketAction(
     //     reservedItems: OrderListOrdersRes(
@@ -113,7 +115,7 @@ _getReservedOrderListAction(AppState state, NextDispatcher next) async {
 }
 
 //GetLoadReservedItemAction
-_getLoadReservedItemAction(AppState state, NextDispatcher next) async {
+_getLoadReservedItemAction(AppStateSimple state, NextDispatcher next) async {
   _onSuccess() {
     // List<OrderItemRes> items = [];
     // ApiResult.value['items'].map<OrderItemRes>((e) {
@@ -139,7 +141,7 @@ _getLoadReservedItemAction(AppState state, NextDispatcher next) async {
 }
 
 //GetCalculateTotalDueAction
-_getCalculateTotalDueAction(AppState state, NextDispatcher next) async {
+_getCalculateTotalDueAction(AppStateSimple state, NextDispatcher next) async {
   _onSuccess() {
     // next(UpdateBasketAction(
     //     totalDue: ApiResult.value['totalDue'],
@@ -160,7 +162,8 @@ _getCalculateTotalDueAction(AppState state, NextDispatcher next) async {
 }
 
 //GetAddDiscountToCartItemAction
-_getAddDiscountToCartItemAction(AppState state, NextDispatcher next) async {
+_getAddDiscountToCartItemAction(
+    AppStateSimple state, NextDispatcher next) async {
   double discount = state.basketState.selectedItemDiscount;
   OrderItemRes selectedItem = state.basketState.selectedItem;
   selectedItem.discount = discount;
@@ -168,7 +171,7 @@ _getAddDiscountToCartItemAction(AppState state, NextDispatcher next) async {
 }
 
 //GetOrderSaveOrderAction
-_getOrderSaveOrderAction(AppState state, next) async {
+_getOrderSaveOrderAction(AppStateSimple state, next) async {
   final _params = {
     "orderId": state.basketState.selectedReservedItem.orderId,
     "discount": state.basketState.totalDiscount,
