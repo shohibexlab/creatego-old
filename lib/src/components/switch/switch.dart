@@ -7,8 +7,10 @@ class DefaultSwitch extends StatefulWidget {
   String? note;
   double? height;
   bool? value;
+  ValueChanged<bool>? onChanged;
 
-  DefaultSwitch({this.height, this.label, this.note, this.value}) {
+  DefaultSwitch(
+      {this.height, this.label, this.note, this.value, this.onChanged}) {
     height ??= 88;
     value ??= true;
   }
@@ -40,9 +42,10 @@ class _DefaultSwitchState extends State<DefaultSwitch> {
               Flexible(
                 child: Switch(
                     value: widget.value!,
-                    onChanged: (v) => setState(() {
-                          widget.value = v;
-                        })),
+                    onChanged: widget.onChanged ??
+                        (v) => setState(() {
+                              widget.value = v;
+                            })),
               ),
             ],
           ),
