@@ -16,6 +16,8 @@ dependencies:
   dropdown_button2: ^1.0.6
   hovering: ^1.0.4
   json_annotation: ^4.1.0
+  auto_route: ^3.2.4
+
 
 dev_dependencies:
   flutter_test:

@@ -32,3 +32,7 @@ export 'src/components/inputs/table_builder.dart';
 export 'src/components/popups/popup_content.dart';
 export 'src/components/modals/default_modal.dart';
 export 'src/components/switch/switch.dart';
+export 'src/components/sidebar/sidebar.dart';
+export 'src/components/sidebar/sidebar_tab_model.dart';
+export 'src/components/sidebar/sidebar_tab_parent.dart';
+export 'src/components/sidebar/sidebar_tab_child.dart';

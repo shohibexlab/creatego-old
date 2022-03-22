@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:yollet_system/src/utils/yollet_utils/get_image_widget.dart';
-// import "dart:html" as html;
+import "dart:html" as html;
 import 'package:yollet_system/yollet_theme.dart';
 
 class LogoBanner extends StatelessWidget {
@@ -9,7 +8,10 @@ class LogoBanner extends StatelessWidget {
   String? goToLink;
 
   static dynamic get name => LogoBanner;
-  LogoBanner({this.height = 64, this.goToLink, required this.image});
+  LogoBanner(
+      {this.height = 64,
+      this.goToLink,
+      this.image = 'http://placehold.jp/150x150.png'});
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +33,9 @@ class LogoBanner extends StatelessWidget {
     const String _blank = "_blank";
     const String _https = "https://";
     if (goToLink!.startsWith(_https)) {
-     // html.window.open(goToLink!, _blank);
+      html.window.open(goToLink!, _blank);
     } else {
-      //html.window.open(_https + goToLink!, _blank);
+      html.window.open(_https + goToLink!, _blank);
     }
   }
 }
