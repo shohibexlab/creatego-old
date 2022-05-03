@@ -1,4 +1,4 @@
-import 'package:yollet_system/src/utils/yollet_utils/get_image_widget.dart';
+import 'package:yollet_system/src/utils/get_image_widget.dart';
 import "dart:html" as html;
 import 'package:yollet_system/yollet_theme.dart';
 

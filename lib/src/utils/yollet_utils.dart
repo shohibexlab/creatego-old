@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:heroicons/heroicons.dart';
 import 'package:yollet_system/src/components/appbar/logo_banner.dart';
 import 'package:yollet_system/src/components/appbar/topbar.dart';
 import 'package:yollet_system/src/components/breadcrumbs/breadcrumbs.dart';
@@ -11,6 +10,7 @@ import 'package:yollet_system/src/components/modals/default_modal.dart';
 import 'package:yollet_system/src/components/sized_text/sized_text.dart';
 import 'package:yollet_system/src/components/switch/switch.dart';
 
+import '../../yollet_theme.dart';
 import 'get_color.dart';
 import 'get_yollet_variants.dart';
 
@@ -49,7 +49,7 @@ Widget _getWidget(Map params, String widgetName) {
       return DefaultModal(
           onCancel: () {},
           onConfirm: () {},
-          icon: HeroIcons.icons[params['icon']],
+          // icon: HeroIcons.icons[params['icon']],
           cancelText: params['cancelText'],
           confirmText: params['confirmText'],
           subtitle: params['subtitle'],
@@ -82,8 +82,8 @@ Widget _getWidget(Map params, String widgetName) {
         isIconRightSide: params['isIconRightSide'],
         sizeOfButton: getYolletButtonSize(params['sizeOfButton']),
         variant: getYolletButtonVariant(params['variant']),
-        icon: HeroIcons.icons[params['icon']],
-        iconButton: HeroIcons.icons[params['iconButton']],
+        // icon: HeroIcons.icons[params['icon']],
+        // iconButton: HeroIcons.icons[params['iconButton']],
       );
     case 'Breadcrumb':
       return Breadcrumb(routes: params['routes']);
