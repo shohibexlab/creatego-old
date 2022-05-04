@@ -9,17 +9,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # REST API Related Dependencies
+  retrofit: '>=3.0.0 <4.0.0'
+  dio: ^4.0.1
+  json_annotation: ^4.1.0
+
+  # REDUX Related Dependencies
   redux: ^5.0.0
   flutter_redux: ^0.8.2
+
+  # Routing Related Dependencies
+  auto_route: ^3.2.4
+
+  # Additional Related Dependencies
   intl: ^0.17.0
   get: ^4.6.1
   heroicons: ^0.3.0
   dropdown_button2: ^1.0.6
   hovering: ^1.0.4
-  json_annotation: ^4.1.0
-  auto_route: ^3.2.4
-  retrofit: '>=3.0.0 <4.0.0'
-  dio: ^4.0.1
 
 dev_dependencies:
   flutter_test:
