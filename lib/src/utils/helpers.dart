@@ -22,7 +22,7 @@ extension FutureExceptionHandler on Future {
   /// if success is false then the error message will be returned and data is null.
   /// if success is true then the data will be returned and error message is null or ok.
   /// Fits properly with retrofit.
-  Future<ApiResponse> errorHandler() async {
+  Future<ApiResponse> nocodeErrorHandler() async {
     final ApiResponse _apiResponse = ApiResponse(success: false);
     return await then((successRes) {
       //Success Case -> Converting to ApiResponse
