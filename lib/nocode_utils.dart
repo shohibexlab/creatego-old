@@ -1,8 +1,9 @@
 library nocode_utils;
 
 //Packages
-export 'package:retrofit/retrofit.dart';
-export 'package:retrofit/dio.dart';
+import 'package:retrofit/retrofit.dart';
+import 'package:retrofit/dio.dart';
 
 //Utils
 export 'src/utils/nocode_helpers.dart';
+export 'src/utils/dio_client_for_retrofit.dart';
