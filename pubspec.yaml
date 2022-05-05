@@ -27,12 +27,22 @@ dependencies:
   heroicons: ^0.3.0
   dropdown_button2: ^1.0.6
   hovering: ^1.0.4
+  syncfusion_flutter_datagrid: ^19.4.43
+  flutter_screenutil: ^5.0.0+2
+  image_picker: ^0.8.4+11
+
+
+# Database Related Dependencies
+  hive: ^2.1.0
+  hive_flutter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
-
+  build_runner: ^2.1.2
+  json_serializable: ^5.0.2
+  auto_route_generator: ^3.2.3
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
