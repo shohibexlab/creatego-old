@@ -274,6 +274,25 @@ class ThemeColors {
   static const pink800 = Color(0xFF9D174D);
   static const pink900 = Color(0xFF831843);
 
+  //Yoshop
+  static const yoshop100 = Color(0xFFF5F2F0);
+  static const yoshop200 = Color(0xFFFFF5EB);
+  static const yoshop300 = Color(0xFFFFD2A4);
+  static const yoshop400 = Color(0xFFF9883C);
+  static const yoshop500 = Color(0xFFF9883C);
+  static const yoshop600 = Color(0xFFFF5929);
+  static const yoshop700 = Color(0xFFB8D5E7);
+  static const yoshop800 = Color(0xFF215988);
+
+  //Finenex - finex
+  static const finex100 = Color(0xFFF5F2F0);
+  static const finex200 = Color(0xFFFFF5EB);
+  static const finex300 = Color(0xFFFFD2A4);
+  static const finex400 = Color(0xFFEF4444);
+  static const finex500 = Color(0xFFDE8D09);
+  static const finex600 = Color(0xFF414F66);
+  static const finex700 = Color(0xFF202D3E);
+
   static const Map<String, Color> colors = {
     'bluegray50': bluegray50,
     'bluegray100': bluegray100,
