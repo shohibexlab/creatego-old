@@ -11,10 +11,10 @@ class ApiResponse {
   RequestOptions? requestOptions;
   ApiResponse(
       {this.resMessage,
-      this.resCode,
-      this.data,
-      required this.success,
-      this.requestOptions});
+        this.resCode,
+        this.data,
+        required this.success,
+        this.requestOptions});
 }
 
 extension FutureExceptionHandler on Future {
@@ -49,32 +49,32 @@ extension FutureExceptionHandler on Future {
               Type _otherErrorType = _dioError.error.runtimeType;
               switch (_otherErrorType) {
                 case SocketException:
-                  //Handle no Internet access
+                //Handle no Internet access
                   _apiResponse.resCode =
-                      900; // 900 is custom error code for no internet
+                  900; // 900 is custom error code for no internet
                   _apiResponse.resMessage = 'ERR_INTERNET_DISCONNECTED';
                   break;
                 default:
-                  //Handle Unknown error
+                //Handle Unknown error
                   _apiResponse.resCode =
-                      800; // 800 is custom error code for unknown error
+                  800; // 800 is custom error code for unknown error
                   _apiResponse.resMessage =
-                      'ERR_UNKNOWN - [${_dioError.message}]\n[stack_trace: ${_dioError.stackTrace}]';
+                  'ERR_UNKNOWN - [${_dioError.message}]\n[stack_trace: ${_dioError.stackTrace}]';
               }
               break;
             case DioErrorType.connectTimeout:
               _apiResponse.resCode =
-                  910; // 910 is custom error code for connect timeout
+              910; // 910 is custom error code for connect timeout
               _apiResponse.resMessage = _dioError.message;
               break;
             case DioErrorType.sendTimeout:
               _apiResponse.resCode =
-                  920; // 920 is custom error code for send timeout
+              920; // 920 is custom error code for send timeout
               _apiResponse.resMessage = _dioError.message;
               break;
             case DioErrorType.receiveTimeout:
               _apiResponse.resCode =
-                  930; // 930 is custom error code for receive timeout
+              930; // 930 is custom error code for receive timeout
               _apiResponse.resMessage = _dioError.message;
               break;
             case DioErrorType.cancel:
@@ -84,11 +84,21 @@ extension FutureExceptionHandler on Future {
           }
           break;
         default:
-          //Handle Unknown error
+        //Handle Unknown error
           _apiResponse.resCode =
-              801; // 801 is custom error code for unknown(1) error
-          _apiResponse.resMessage =
-              'ERR_UNKNOWN_1  - [${errrorRes.toString()}]';
+          801; // 801 is custom error code for unknown(1) error
+          final _errType = errrorRes.runtimeType;
+          switch(_errType){
+            case UnsupportedError:
+              final _unsoppertedErr = errrorRes as UnsupportedError;
+              _apiResponse.resMessage =
+              'ERR_UNKNOWN_1  - [${_unsoppertedErr.message}]\n[stack_trace: ${_unsoppertedErr.stackTrace}]';
+              break;
+            default:
+              _apiResponse.resMessage =
+              'ERR_UNKNOWN_1  - [${errrorRes.toString()}], [err_type: $_errType]';
+          }
+
           break;
       }
       return _apiResponse;

@@ -65,3 +65,46 @@ final loggerInterceptor =
   log("└------------------------------------------------------------------------------");
   handler.next(error); //continue
 });
+
+////Retrofit example. These codes are supposed to be generated.
+//import 'dart:io';
+// import 'package:retrofit/retrofit.dart';
+// import 'package:dio/dio.dart';
+// import 'package:json_annotation/json_annotation.dart';
+//
+// part 'rf_fit_client.g.dart';
+//
+// @RestApi(
+//     baseUrl: 'https://6271f859c455a64564ba2d94.mockapi.io/api/rfit',
+//     parser: Parser.JsonSerializable)
+// abstract class RestClient {
+//   factory RestClient(Dio dio, {String baseUrl}) = _RestClient;
+//
+//   @GET("/image")
+//   Future<HttpResponse<List<Task>>> getTasks();
+//
+//   @GET("/image/{id}")
+//   Future<HttpResponse<Task>> getTask(@Path() int id);
+//
+//   @GET("/image/{id}")
+//   Future<HttpResponse> getTaskWithNullParam(@Path() int id);
+//
+//   @GET("/image`")
+//   Future<HttpResponse<Task>> getTaskWithQuery(
+//       @Queries() Map<String, dynamic> valueQuery);
+//
+//   @POST("http://httpbin.org/post")
+//   Future<HttpResponse> postTaskWithFile(@Part() File file);
+//
+//   @POST("http://httpbin.org/post")
+//   @FormUrlEncoded()
+//   Future<HttpResponse> postUrlEncodedFormData(@Field() String hello);
+// }
+//
+// @JsonSerializable()
+// class Task {
+//   String id;
+//   Task({required this.id});
+//   factory Task.fromJson(Map<String, dynamic> json) => _$TaskFromJson(json);
+//   Map<String, dynamic> toJson() => _$TaskToJson(this);
+// }
