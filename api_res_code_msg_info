@@ -1,0 +1,13 @@
+//Server Side error codes
+    200: success
+    400: bad request
+    500: server error
+//Client Side error codes:
+    900: No internet (ERR_INTERNET_DISCONNECTED).
+    800: Unknown error (ERR_UNKNOWN - STACK_TRACE: ...).
+    801: Unknown(1) error (UnsupportedError) - (ERR_UNKNOWN_1 - STACK_TRACE: ...). (Mostly error with the code)
+    910: Connect timeout.
+    920: Send timeout.
+    930: Receive timeout.
+    940: Cancel.
+
