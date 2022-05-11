@@ -27,9 +27,14 @@ class DioClientForRetrofit {
     };
   }
 
-  Dio init() {
+  Dio init({List<Interceptor>? customInterceptors, bool prettyLog = true}) {
     Dio _dio = Dio();
-    _dio.interceptors.add(loggerInterceptor);
+    if (prettyLog) {
+      _dio.interceptors.add(loggerInterceptor);
+    }
+    if (customInterceptors != null && customInterceptors.isNotEmpty) {
+      _dio.interceptors.addAll(customInterceptors);
+    }
     BaseOptions options = BaseOptions(
         headers: headers,
         responseType: responseType,

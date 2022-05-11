@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
@@ -23,8 +24,7 @@ extension FutureExceptionHandler on Future {
   /// if success is false then the error message will be returned and data is null or dynamic.
   /// if success is true then the data will be returned and error message is null or ok.
   /// Fits properly with retrofit.
-  /// In case of success, if decoded param is true then the data will be decoded(Map).
-  Future<ApiResponse> nocodeErrorHandler({bool decoded = true}) async {
+  Future<ApiResponse> nocodeErrorHandler() async {
     final ApiResponse _apiResponse = ApiResponse(success: false);
     return await then((successRes) {
       //Success Case -> Converting to ApiResponse
@@ -33,14 +33,11 @@ extension FutureExceptionHandler on Future {
       _apiResponse.resCode = _res.response.statusCode;
       _apiResponse.resMessage = successRes.response.statusMessage;
       _apiResponse.requestOptions = successRes.response.requestOptions;
-      if (decoded) {
-        _apiResponse.data = jsonDecode(successRes.data);
-      } else {
-        _apiResponse.data = successRes.data;
-      }
+      _apiResponse.data = successRes.data;
       return _apiResponse;
     }).catchError((Object errrorRes) {
       //Error Case -> Converting to ApiResponse
+      _apiResponse.success = false;
       switch (errrorRes.runtimeType) {
         case DioError:
           final _dioError = (errrorRes as DioError);
