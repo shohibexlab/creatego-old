@@ -1,6 +1,6 @@
-import 'package:yollet_system/src/utils/get_image_widget.dart';
+import 'package:creatego/src/utils/get_image_widget.dart';
 import "dart:html" as html;
-import 'package:yollet_system/yollet_theme.dart';
+import 'package:creatego/yollet_theme.dart';
 
 class LogoBanner extends StatelessWidget {
   double height;

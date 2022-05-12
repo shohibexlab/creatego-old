@@ -1,9 +1,9 @@
 // import 'dart:developer' as developer;
 // import 'package:flutter/foundation.dart';
 // import 'package:redux/redux.dart';
-// import 'package:yollet_system/src/navigation/states/yollet_nav_state.dart';
-// import 'package:yollet_system/src/navigation/yollet_nav_action.dart';
-// import 'package:yollet_system/src/navigation/yollet_nav_app_state.dart';
+// import 'package:creatego/src/navigation/states/yollet_nav_state.dart';
+// import 'package:creatego/src/navigation/yollet_nav_action.dart';
+// import 'package:creatego/src/navigation/yollet_nav_app_state.dart';
 //
 // AppStateYollet appReducerYollet(AppStateYollet state, dynamic action) {
 //   var newState = state.copyWith(

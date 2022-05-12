@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:yollet_system/src/components/appbar/logo_banner.dart';
-import 'package:yollet_system/src/components/appbar/topbar.dart';
-import 'package:yollet_system/src/components/breadcrumbs/breadcrumbs.dart';
-import 'package:yollet_system/src/components/buttons/default_button.dart';
-import 'package:yollet_system/src/components/cards/card.dart';
-import 'package:yollet_system/src/components/dropdown/dropdown_2.dart';
-import 'package:yollet_system/src/components/inputs/custom_input.dart';
-import 'package:yollet_system/src/components/modals/default_modal.dart';
-import 'package:yollet_system/src/components/sized_text/sized_text.dart';
-import 'package:yollet_system/src/components/switch/switch.dart';
+import 'package:creatego/src/components/appbar/logo_banner.dart';
+import 'package:creatego/src/components/appbar/topbar.dart';
+import 'package:creatego/src/components/breadcrumbs/breadcrumbs.dart';
+import 'package:creatego/src/components/buttons/default_button.dart';
+import 'package:creatego/src/components/cards/card.dart';
+import 'package:creatego/src/components/dropdown/dropdown_2.dart';
+import 'package:creatego/src/components/inputs/custom_input.dart';
+import 'package:creatego/src/components/modals/default_modal.dart';
+import 'package:creatego/src/components/sized_text/sized_text.dart';
+import 'package:creatego/src/components/switch/switch.dart';
 
 import '../../yollet_theme.dart';
 import 'get_color.dart';

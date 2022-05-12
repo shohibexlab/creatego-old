@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 
-import 'package:yollet_system/src/components/sidebar/sidebar_tab_child.dart';
-import 'package:yollet_system/src/components/sidebar/sidebar_tab_model.dart';
+import 'package:creatego/src/components/sidebar/sidebar_tab_child.dart';
+import 'package:creatego/src/components/sidebar/sidebar_tab_model.dart';
 
 import '../../../yollet_theme.dart';
 

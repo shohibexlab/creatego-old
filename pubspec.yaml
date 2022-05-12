@@ -1,5 +1,5 @@
-name: yollet_system
-description: Yollet System Package
+name: creatego
+description: CreateGo no-code Package
 version: 0.0.1
 
 environment:

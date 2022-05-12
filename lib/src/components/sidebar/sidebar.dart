@@ -1,6 +1,6 @@
 import 'dart:html' as html;
-import 'package:yollet_system/src/components/sidebar/sidebar_tab_parent.dart';
-import 'package:yollet_system/yollet_theme.dart';
+import 'package:creatego/src/components/sidebar/sidebar_tab_parent.dart';
+import 'package:creatego/yollet_theme.dart';
 
 import '../appbar/logo_banner.dart';
 import '../banner/info_banner.dart';

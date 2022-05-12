@@ -1,5 +1,5 @@
-# yollet_system
+# creatego
  
-  yollet_system:
+  creatego:
     git:
-      url: https://github.com/shohibexlab/yollet_system
+      url: https://github.com/shohibexlab/creatego

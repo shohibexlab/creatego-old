@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
-import 'package:yollet_system/src/components/buttons/button_variants.dart';
-import 'package:yollet_system/yollet_theme.dart';
+import 'package:creatego/src/components/buttons/button_variants.dart';
+import 'package:creatego/yollet_theme.dart';
 
 class DefaultTab extends StatelessWidget {
   String text;

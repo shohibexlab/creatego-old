@@ -1,9 +1,9 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
-import 'package:yollet_system/src/components/buttons/button_variants.dart';
-import 'package:yollet_system/src/components/sized_text/sized_text.dart';
-import 'package:yollet_system/yollet_theme.dart';
+import 'package:creatego/src/components/buttons/button_variants.dart';
+import 'package:creatego/src/components/sized_text/sized_text.dart';
+import 'package:creatego/yollet_theme.dart';
 
 class DefaultDropdownValue extends StatelessWidget {
   String? hintText;

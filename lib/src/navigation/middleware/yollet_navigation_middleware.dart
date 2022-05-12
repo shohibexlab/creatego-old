@@ -1,4 +1,4 @@
-// import 'package:yollet_system/src/navigation/yollet_nav_action.dart';
+// import 'package:creatego/src/navigation/yollet_nav_action.dart';
 //
 // /* GetX Navigation Information => https://mukhtharcm.com/getx-navigation-basics/ */
 //

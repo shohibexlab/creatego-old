@@ -1,5 +1,5 @@
 import 'package:mix/mix.dart';
-import 'package:yollet_system/yollet_theme.dart';
+import 'package:creatego/yollet_theme.dart';
 
 // ignore: must_be_immutable
 class YSLogoBanner extends StatelessWidget {

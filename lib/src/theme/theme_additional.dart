@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yollet_system/src/theme/theme_color.dart';
+import 'package:creatego/src/theme/theme_color.dart';
 
 class ThemeShadows {
   static List<BoxShadow> shadowSm = [

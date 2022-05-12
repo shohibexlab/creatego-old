@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:yollet_system/src/components/buttons/button_variants.dart';
-import 'package:yollet_system/src/components/buttons/default_button.dart';
-import 'package:yollet_system/src/components/sized_text/sized_text.dart';
-import 'package:yollet_system/yollet_theme.dart';
+import 'package:creatego/src/components/buttons/button_variants.dart';
+import 'package:creatego/src/components/buttons/default_button.dart';
+import 'package:creatego/src/components/sized_text/sized_text.dart';
+import 'package:creatego/yollet_theme.dart';
 
 import 'card.dart';
 

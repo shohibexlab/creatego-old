@@ -1,5 +1,5 @@
-import 'package:yollet_system/src/components/sidebar/sidebar_tab_model.dart';
-import 'package:yollet_system/yollet_theme.dart';
+import 'package:creatego/src/components/sidebar/sidebar_tab_model.dart';
+import 'package:creatego/yollet_theme.dart';
 
 class SidebarTabChild extends StatefulWidget {
   final SidebarModel? menuItem;

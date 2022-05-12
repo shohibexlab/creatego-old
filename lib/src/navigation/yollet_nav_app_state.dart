@@ -1,6 +1,6 @@
 // import 'package:redux/redux.dart';
-// import 'package:yollet_system/src/navigation/middleware/yollet_navigation_middleware.dart';
-// import 'package:yollet_system/src/navigation/yollet_nav_reducer.dart';
+// import 'package:creatego/src/navigation/middleware/yollet_navigation_middleware.dart';
+// import 'package:creatego/src/navigation/yollet_nav_reducer.dart';
 //
 // final appStoreYolletNav = Store<AppStateYollet>(
 //   appReducerYollet,

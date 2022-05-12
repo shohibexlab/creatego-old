@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yollet_system/src/components/popups/popup_content.dart';
+import 'package:creatego/src/components/popups/popup_content.dart';
 
 Future showPopup(
   BuildContext context,

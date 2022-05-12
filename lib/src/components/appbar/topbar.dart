@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
-import 'package:yollet_system/src/components/buttons/button_variants.dart';
-import 'package:yollet_system/src/components/buttons/default_button.dart';
-import 'package:yollet_system/src/components/image_placeholder/image_placeholder.dart';
-import 'package:yollet_system/src/components/inputs/search_field.dart';
-import 'package:yollet_system/yollet_theme.dart';
+import 'package:creatego/src/components/buttons/button_variants.dart';
+import 'package:creatego/src/components/buttons/default_button.dart';
+import 'package:creatego/src/components/image_placeholder/image_placeholder.dart';
+import 'package:creatego/src/components/inputs/search_field.dart';
+import 'package:creatego/yollet_theme.dart';
 
 class DefaultTopbar extends StatelessWidget {
   String image;
