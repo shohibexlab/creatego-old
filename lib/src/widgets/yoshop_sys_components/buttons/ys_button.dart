@@ -10,6 +10,8 @@ class YSButton extends StatelessWidget {
   final double? iconsize;
   final bool isIconRight;
   final VoidCallback? onPressed;
+
+  ///In order to change button size, padding must be edited
   EdgeInsets padding;
   Color bgColor = ThemeColors.orange500;
   Color textColor = ThemeColors.white;

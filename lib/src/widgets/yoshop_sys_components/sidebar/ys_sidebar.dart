@@ -151,9 +151,7 @@ class _YSSidebarState extends State<YSSidebar> {
     crossAxis(CrossAxisAlignment.start),
   );
 
-  Mix boxMix = Mix(
-    const BoxAttributes(color: ThemeColors.white),
-  );
+  Mix boxMix = Mix(const BoxAttributes(color: ThemeColors.white));
 
   @override
   Widget build(BuildContext context) {

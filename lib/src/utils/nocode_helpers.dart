@@ -11,6 +11,7 @@ class ApiResponse {
   bool success;
   dynamic data;
   RequestOptions? requestOptions;
+
   ApiResponse(
       {this.resMessage,
       this.resCode,
