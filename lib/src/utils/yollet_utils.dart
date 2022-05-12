@@ -10,7 +10,7 @@ import 'package:creatego/src/components/modals/default_modal.dart';
 import 'package:creatego/src/components/sized_text/sized_text.dart';
 import 'package:creatego/src/components/switch/switch.dart';
 
-import '../../yollet_theme.dart';
+import '../../creatego_theme.dart';
 import 'get_color.dart';
 import 'get_yollet_variants.dart';
 

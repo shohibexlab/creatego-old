@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
 import 'package:creatego/src/components/buttons/button_variants.dart';
 import 'package:creatego/src/components/buttons/default_button.dart';
-import 'package:creatego/yollet_theme.dart';
+import 'package:creatego/creatego_theme.dart';
 
 class DefaultModal extends StatelessWidget {
   VoidCallback onConfirm;

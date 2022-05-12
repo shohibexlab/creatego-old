@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:heroicons/heroicons.dart';
 import 'package:creatego/src/components/tabs/tab.dart';
-import 'package:creatego/yollet_theme.dart';
+import 'package:creatego/creatego_theme.dart';
 
 class Navigationbar extends StatelessWidget {
   int tabsLength;

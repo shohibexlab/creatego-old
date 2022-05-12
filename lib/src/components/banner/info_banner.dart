@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:creatego/src/components/image_placeholder/image_placeholder.dart';
 import 'package:creatego/src/components/sized_text/sized_text.dart';
-import 'package:creatego/yollet_theme.dart';
+import 'package:creatego/creatego_theme.dart';
 
 class InfoBanner extends StatelessWidget {
   String? image;

@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:mix/mix.dart';
-// import 'package:creatego/yollet_theme.dart';
+// import 'package:creatego/creatego_theme.dart';
 //
 //
 // const grayText = Variant('grayText');

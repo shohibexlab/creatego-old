@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hovering/hovering.dart';
 import 'package:creatego/src/components/buttons/button_variants.dart';
-import 'package:creatego/yollet_theme.dart';
+import 'package:creatego/creatego_theme.dart';
 
 class DefaultButton extends StatelessWidget {
   HeroIcons? icon;
